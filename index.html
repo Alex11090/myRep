@@ -3,15 +3,702 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet">
+
+    <title>Alex</title>
 </head>
 
 <body>
-    <h1>Privetik!!</h1>
-    <h2>проехала машина</h2>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-padding">
+                <div class="header__inner">
+                    <div class="header__logo-title">
+                        <img class="logo" src="images/logo.svg" alt="logo">
+                        <h1 class="header__title">
+                            Alex
+                        </h1>
+                    </div>
+                    <div class="header__list-icon">
+                        <span></span>
+                    </div>
+                    <nav class="header__list-outer">
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a class="header__list-link1 header__list-link" data-goto=".about-me"
+                                    href="#about-me">Обо мне</a>
+                            </li>
+
+                            <li class="header__list-item">
+                                <a class="header__list-link3 header__list-link" data-goto=".sites"
+                                    href="#sites">Портфолио-Сайты</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link4 header__list-link" data-goto=".contacts"
+                                    href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about-me" id="about-me">
+                <div class="container-padding">
+                    <div class="about-me__inner">
+                        <h2 class="about-me__title">
+                            Привет, меня зовут - Alex, я:
+                        </h2>
+                        <nav class="about-me__list-outer">
+                            <ul class="about-me__list">
+                                <li class="about-me__list-item">
+                                    - просто верстальщик - влюбленный в код!
+                                </li><br>
+                                <li class="about-me__list-item">
+                                    - в прошлом авиационный инженер, сейчас занимаюсь версткой!
+                                </li><br>
+                                <li class="about-me__list-item">
+                                    - обожаю покорять новые “вершины”!
+                                </li><br>
+                                <li class="about-me__list-item">
+                                    - с радостью примусь за ваш заказ!
+                                </li><br>
+                                <li class="about-me__list-item">
+                                    - сделаю все качественно и в указанный срок!
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="about-me__smile-outer">
+                            <p class="about-me__smile">:D</p>
+                        </div>
+                        <div class="about-me__htmllogo-outer">
+                            <p class="about-me__htmllogo">&lt;/&gt;</p>
+                        </div>
+                        <div class="about-me__myphoto-outer">
+                            <img class="about-me__myphoto" src="images/ico1.jpg" alt="photo">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- <section class="gamedev" id="gamedev">
+                <div class="container">
+                    <div class="gamedev__inner">
+                        <div class="arrowtotitle">
+                        </div>
+                        <h3 class="gamedev__title">GameDev</h3>
+
+                        <div class="title-descr title-descr--close">
+                            <div class="title-descr__inner">
+                                <div class="title-descr__toggle">
+                                </div>
+                                <p class="title-descr__info">
+                                    Прошу прощения - этот блок сейчас не активен из за того, что ни одной игры я
+                                    полностью не закончил и показывать их не имеет никакого смысла<br><br>
+                                    Как говорится, "<span class="title-descr__info-span">To be continued</span>" <br>:D
+                                </p>
+                                <img class="title-descr__gif" src="https://i.gifer.com/1jYu.gif" alt="gif">
+                            </div>
+                        </div>
+
+                        <div class="gamedev__big-preview slick-initialized slick-slider"><button
+                                class="slick-prev slick-arrow" aria-label="Previous" type="button"
+                                style="">Previous</button>
+                            <div class="slick-list draggable">
+                                <div class="slick-track"
+                                    style="opacity: 1; width: 7500px; transform: translate3d(-500px, 0px, 0px);">
+                                    <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/ufc-4.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-current slick-active" data-slick-index="0"
+                                        aria-hidden="false" style="width: 500px;">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img"
+                                                    src="images/gamedev/ars-games-of-the-year-2020.jpg" alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="1" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/unity.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/unreal.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="3" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/metro.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="4" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/mortal.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="5" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/nfs.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="6" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/ufc-4.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img"
+                                                    src="images/gamedev/ars-games-of-the-year-2020.jpg" alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/unity.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/unreal.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/metro.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/mortal.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/nfs.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true"
+                                        style="width: 500px;" tabindex="-1">
+                                        <div>
+                                            <div class="gamedev__big-item" style="width: 100%; display: inline-block;">
+                                                <img class="gamedev__big-img" src="images/gamedev/ufc-4.jpg"
+                                                    alt="big-card">
+                                                <p class="gamedev__big-title">
+                                                    Lorem ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><button class="slick-next slick-arrow" aria-label="Next" type="button"
+                                style="">Next</button>
+                        </div>
+
+
+                        <div class="gamedev__small-cards">
+                            <div class="gamedev__small-card">
+                                <img class="gamedev__small-card-img" src="images/gamedev/ars-games-of-the-year-2020.jpg"
+                                    alt="small card">
+                                <p class="gamedev__small-card-title">
+                                    Lorem
+                                </p>
+                            </div>
+                            <div class="gamedev__small-card">
+                                <img class="gamedev__small-card-img" src="images/gamedev/metro.jpg" alt="small card">
+                                <p class="gamedev__small-card-title">
+                                    Lorem
+                                </p>
+                            </div>
+                            <div class="gamedev__small-card">
+                                <img class="gamedev__small-card-img" src="images/gamedev/unreal.jpg" alt="small card">
+                                <p class="gamedev__small-card-title">
+                                    Lorem
+                                </p>
+                            </div>
+                            <div class="gamedev__small-card">
+                                <img class="gamedev__small-card-img" src="images/gamedev/unity.jpg" alt="small card">
+                                <p class="gamedev__small-card-title">
+                                    Lorem
+                                </p>
+                            </div>
+                            <div class="gamedev__small-card">
+                                <img class="gamedev__small-card-img" src="images/gamedev/nfs.jpg" alt="small card">
+                                <p class="gamedev__small-card-title">
+                                    Lorem
+                                </p>
+                            </div>
+                            <div class="gamedev__small-card">
+                                <img class="gamedev__small-card-img" src="images/gamedev/ufc-4.jpg" alt="small card">
+                                <p class="gamedev__small-card-title">
+                                    Lorem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+
+            <section class="sites" id="sites">
+                <div class="container">
+                    <div class="sites__inner">
+                        <div class="arrowtotitle-sites">
+                        </div>
+                        <h3 class="sites__title">
+                            Сайты
+                        </h3>
+
+                        <div class="title-descr_two title-descr_two--close">
+                            <div class="title-descr__inner title-descr__inner-two">
+                                <div class="title-descr__toggle">
+                                </div>
+                                <p class="title-descr__info title-desrc__info_two">
+                                    Здесь находится мое так называемое - <span class="title-descr__info-span">Портфолио
+                                        Сайтов</span>.<br><br>
+                                    Приятного просмотра!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="sites__bestall">
+
+                            <div class="sites-bestworks">
+                                <h4 class="sites-bestworks__title">Крайние работы</h4>
+                                <div class="sites-bestworks__cards">
+                                    <a class="sites-bestworks__card" href="https://qwertycamedy.github.io/gloverlly/"
+                                        target="_blank">
+                                        <img class="sites-bestworks__card-img" src="images/sites/cloverly.jpg"
+                                            alt="best work">
+                                        <p class="sites-bestworks__card-title">Cloverly</p>
+                                    </a>
+                                    <a class="sites-bestworks__card" href="https://qwertycamedy.github.io/dental/"
+                                        target="_blank">
+                                        <img class="sites-bestworks__card-img" src="images/sites/dental.jpg"
+                                            alt="best work">
+                                        <p class="sites-bestworks__card-title">Dental</p>
+                                    </a>
+                                    <a class="sites-bestworks__card" href="https://qwertycamedy.github.io/We-aRe/"
+                                        target="_blank">
+                                        <img class="sites-bestworks__card-img"
+                                            src="images/sites/FireShot Capture 027 - Document - localhost.jpg"
+                                            alt="best work">
+                                        <p class="sites-bestworks__card-title">We-aRe</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="sites-allworks">
+                                <h4 class="sites-allworks__title">Все работы</h4>
+                                <div class="sites-allworks__links slick-initialized slick-slider slick-dotted">
+                                    <div class="slick-list draggable">
+                                        <div class="slick-track"
+                                            style="opacity: 1; width: 4734px; transform: translate3d(-2630px, 0px, 0px);">
+                                            <div class="slick-slide slick-cloned" data-slick-index="-4" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/sos/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img" src="images/sites/sos.jpg"
+                                                            alt="work">
+                                                        <p class="sites-allworks__link-title">SOS-game</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="-3" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/pk-sborka/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/pk-sborka.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">PC-assembly</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="-2" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/travello/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/travello.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Travello</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="-1" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/We-aRe/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/FireShot Capture 027 - Document - localhost.jpg"
+                                                            alt="work">
+                                                        <p class="sites-allworks__link-title">We-aRe</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide" data-slick-index="0" aria-hidden="true"
+                                                style="width: 263px;" role="tabpanel" id="slick-slide10"
+                                                aria-describedby="slick-slide-control10" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/gloverlly/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/cloverly.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Cloverly</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide" data-slick-index="1" aria-hidden="true"
+                                                style="width: 263px;" role="tabpanel" id="slick-slide11"
+                                                aria-describedby="slick-slide-control11" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/dental/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/dental.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Dental</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide" data-slick-index="2" aria-hidden="true"
+                                                style="width: 263px;" role="tabpanel" id="slick-slide12"
+                                                aria-describedby="slick-slide-control12" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/collusion/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/collusion.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Collusion</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide" data-slick-index="3" aria-hidden="true"
+                                                style="width: 263px;" role="tabpanel" id="slick-slide13"
+                                                aria-describedby="slick-slide-control13" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/sos/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img" src="images/sites/sos.jpg"
+                                                            alt="work">
+                                                        <p class="sites-allworks__link-title">SOS-game</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide" data-slick-index="4" aria-hidden="true"
+                                                style="width: 263px;" role="tabpanel" id="slick-slide14"
+                                                aria-describedby="slick-slide-control14" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/pk-sborka/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/pk-sborka.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">PC-assembly</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide" data-slick-index="5" aria-hidden="true"
+                                                style="width: 263px;" role="tabpanel" id="slick-slide15"
+                                                aria-describedby="slick-slide-control15" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/travello/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/travello.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Travello</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-current slick-active" data-slick-index="6"
+                                                aria-hidden="false" style="width: 263px;" role="tabpanel"
+                                                id="slick-slide16" aria-describedby="slick-slide-control16">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/We-aRe/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="0">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/FireShot Capture 027 - Document - localhost.jpg"
+                                                            alt="work">
+                                                        <p class="sites-allworks__link-title">We-aRe</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned slick-active" data-slick-index="7"
+                                                id="" aria-hidden="false" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/gloverlly/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="0">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/cloverly.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Cloverly</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned slick-active" data-slick-index="8"
+                                                id="" aria-hidden="false" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/dental/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="0">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/dental.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Dental</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned slick-active" data-slick-index="9"
+                                                id="" aria-hidden="false" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/collusion/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="0">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/collusion.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Collusion</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="10" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/sos/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img" src="images/sites/sos.jpg"
+                                                            alt="work">
+                                                        <p class="sites-allworks__link-title">SOS-game</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="11" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/pk-sborka/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/pk-sborka.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">PC-assembly</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="12" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/travello/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/travello.jpg" alt="work">
+                                                        <p class="sites-allworks__link-title">Travello</p>
+                                                    </a></div>
+                                            </div>
+                                            <div class="slick-slide slick-cloned" data-slick-index="13" id=""
+                                                aria-hidden="true" style="width: 263px;" tabindex="-1">
+                                                <div><a class="sites-allworks__link"
+                                                        href="https://qwertycamedy.github.io/We-aRe/" target="_blank"
+                                                        style="width: 100%; display: inline-block;" tabindex="-1">
+                                                        <img class="sites-allworks__link-img"
+                                                            src="images/sites/FireShot Capture 027 - Document - localhost.jpg"
+                                                            alt="work">
+                                                        <p class="sites-allworks__link-title">We-aRe</p>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="slick-dots" style="" role="tablist">
+                                        <li class="" role="presentation"><button type="button" role="tab"
+                                                id="slick-slide-control10" aria-controls="slick-slide10"
+                                                aria-label="1 of 2" tabindex="-1">1</button></li>
+                                        <li role="presentation" class=""><button type="button" role="tab"
+                                                id="slick-slide-control11" aria-controls="slick-slide11"
+                                                aria-label="2 of 2" tabindex="-1">2</button></li>
+                                        <li role="presentation" class=""><button type="button" role="tab"
+                                                id="slick-slide-control12" aria-controls="slick-slide12"
+                                                aria-label="3 of 2" tabindex="-1">3</button></li>
+                                        <li role="presentation" class=""><button type="button" role="tab"
+                                                id="slick-slide-control13" aria-controls="slick-slide13"
+                                                aria-label="4 of 2" tabindex="-1">4</button></li>
+                                        <li role="presentation" class=""><button type="button" role="tab"
+                                                id="slick-slide-control14" aria-controls="slick-slide14"
+                                                aria-label="5 of 2" tabindex="-1">5</button></li>
+                                        <li role="presentation" class=""><button type="button" role="tab"
+                                                id="slick-slide-control15" aria-controls="slick-slide15"
+                                                aria-label="6 of 2" tabindex="-1">6</button></li>
+                                        <li role="presentation" class="slick-active"><button type="button" role="tab"
+                                                id="slick-slide-control16" aria-controls="slick-slide16"
+                                                aria-label="7 of 2" tabindex="0" aria-selected="true">7</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="arrowtotitle-contacts">
+                        </div>
+                        <h3 class="contacts__title">
+                            Контакты
+                        </h3>
+                        <div class="title-descr_three title-descr_three--close">
+                            <div class="title-descr__inner title-descr_three__inner">
+                                <div class="title-descr__toggle">
+                                </div>
+                                <p class="title-descr__info title-descr__info_three">
+                                    Здесь вы можете перейти по ссылкам и связаться со мной там - где вам будет удобно
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contacts__links">
+                            <a class="contacts__link" href="https://vk.com/qwertycamedy" target="_blank">
+                                <img class="contacts__link-img contacts__link-img1" src="images/vk.svg" alt="vk">
+                                <p class="contacts__info contacts__info1">
+                                    VKontakte
+                                </p>
+                            </a>
+                            <a class="contacts__link" href="https://wa.me/87089813966 " target="_blank">
+                                <img class="contacts__link-img contacts__link-img2" src="images/whatsapp.svg"
+                                    alt="whatsapp">
+                                <p class="contacts__info contacts__info2">
+                                    WhatsApp
+                                </p>
+                            </a>
+                            <a class="contacts__link" href="https://www.instagram.com/qwertycamedy/" target="_blank">
+                                <img class="contacts__link-img contacts__link-img3" src="images/instagram.svg"
+                                    alt="instagram">
+                                <p class="contacts__info contacts__info3">
+                                    Instagram
+                                </p>
+                            </a>
+                            <a class="contacts__link" href="https://t.me/Alex_Vishnevsky" target="_blank">
+                                <img class="contacts__link-img contacts__link-img4" src="images/telegram.svg"
+                                    alt="telegram">
+                                <p class="contacts__info contacts__info4">
+                                    Telegram
+                                </p>
+                            </a>
+                            <a class="contacts__link" href="tel:+77089813966" target="_blank">
+                                <img class="contacts__link-img contacts__link-img5" src="images/phone-book.svg"
+                                    alt="phone-number">
+                                <p class="contacts__info contacts__info5">
+                                    Номер телефона
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo footer__logo show" id="button" href="#">
+                        <img src="images/logo.svg" alt="logo">
+
+                        <div class="footer__press">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
