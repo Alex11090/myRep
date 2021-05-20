@@ -5722,7 +5722,7 @@ function(e) {
         return i
     }
 }
-);
+;
 const burgerIcon = document.querySelector(".header__list-icon")
   , listOuter = document.querySelector(".header__list-outer");
 function scrollNav() {
