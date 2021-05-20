@@ -5028,13 +5028,13 @@ function(e) {
             "aria-selected": "true",
             tabindex: "0"
         }).end());
-        for (var o = t.currentSlide, r = o + t.options.slidesToShow; o < r; o++)
-            t.options.focusOnChange ? t.$slides.eq(o).attr({
-                tabindex: "0"
-            }) : t.$slides.eq(o).removeAttr("tabindex");
-        t.activateADA()
-    }
-    ,
+//         for (var o = t.currentSlide, r = o + t.options.slidesToShow; o < r; o++)
+//             t.options.focusOnChange ? t.$slides.eq(o).attr({
+//                 tabindex: "0"
+//             }) : t.$slides.eq(o).removeAttr("tabindex");
+//         t.activateADA()
+//     }
+//     ,
     n.prototype.initArrowEvents = function() {
         var e = this;
         !0 === e.options.arrows && e.slideCount > e.options.slidesToShow && (e.$prevArrow.off("click.slick").on("click.slick", {
