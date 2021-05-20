@@ -4989,12 +4989,12 @@ function(e) {
             return e >= 0 && e < t.slideCount
         }
         ));
-//         t.$slides.add(t.$slideTrack.find(".slick-cloned")).attr({
-//             "aria-hidden": "true",
-//             tabindex: "-1"
-//         }).find("a, input, button, select").attr({
-//             tabindex: "-1"
-//         }),
+        t.$slides.add(t.$slideTrack.find(".slick-cloned")).attr({
+            "aria-hidden": "true",
+            tabindex: "-1"
+        }).find("a, input, button, select").attr({
+            tabindex: "-1"
+        }),
         null !== t.$dots && (t.$slides.not(t.$slideTrack.find(".slick-cloned")).each((function(n) {
             var o = i.indexOf(n);
             if (e(this).attr({
@@ -5028,13 +5028,13 @@ function(e) {
             "aria-selected": "true",
             tabindex: "0"
         }).end());
-//         for (var o = t.currentSlide, r = o + t.options.slidesToShow; o < r; o++)
-//             t.options.focusOnChange ? t.$slides.eq(o).attr({
-//                 tabindex: "0"
-//             }) : t.$slides.eq(o).removeAttr("tabindex");
-//         t.activateADA()
-//     }
-//     ,
+        for (var o = t.currentSlide, r = o + t.options.slidesToShow; o < r; o++)
+            t.options.focusOnChange ? t.$slides.eq(o).attr({
+                tabindex: "0"
+            }) : t.$slides.eq(o).removeAttr("tabindex");
+        t.activateADA()
+    }
+    ,
     n.prototype.initArrowEvents = function() {
         var e = this;
         !0 === e.options.arrows && e.slideCount > e.options.slidesToShow && (e.$prevArrow.off("click.slick").on("click.slick", {
@@ -5722,7 +5722,7 @@ function(e) {
         return i
     }
 }
-;
+));
 const burgerIcon = document.querySelector(".header__list-icon")
   , listOuter = document.querySelector(".header__list-outer");
 function scrollNav() {
