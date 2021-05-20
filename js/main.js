@@ -4989,12 +4989,12 @@ function(e) {
             return e >= 0 && e < t.slideCount
         }
         ));
-        t.$slides.add(t.$slideTrack.find(".slick-cloned")).attr({
-            "aria-hidden": "true",
-            tabindex: "-1"
-        }).find("a, input, button, select").attr({
-            tabindex: "-1"
-        }),
+//         t.$slides.add(t.$slideTrack.find(".slick-cloned")).attr({
+//             "aria-hidden": "true",
+//             tabindex: "-1"
+//         }).find("a, input, button, select").attr({
+//             tabindex: "-1"
+//         }),
         null !== t.$dots && (t.$slides.not(t.$slideTrack.find(".slick-cloned")).each((function(n) {
             var o = i.indexOf(n);
             if (e(this).attr({
